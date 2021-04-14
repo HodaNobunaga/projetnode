@@ -8,6 +8,9 @@ const desserts = [
 		cuisine: [
 			"french"
 		],
+		specificity: [
+			"chocolate"
+		],
 		popular: false,
 		rating: null,
 		rating_total: null,
@@ -22,6 +25,9 @@ const desserts = [
 		cuisine: [
 			"italian"
 		],
+		specificity: [
+			"lactose free"
+		],
 		popular: false,
 		rating: null,
 		rating_total: null,
@@ -35,6 +41,9 @@ const desserts = [
 		description: "Le banana split est un dessert glacé composé traditionnellement d'une banane coupée en longueur, enserrant trois boules de glaces, le tout étant nappé d'une sauce de chocolat chaud et de crème chantilly.",
 		cuisine: [
 			"american"
+		],
+		specificity: [
+			"fruity"
 		],
 		popular: false,
 		rating: null,
@@ -51,6 +60,10 @@ const desserts = [
 		cuisine: [
 			"american"
 		],
+		specificity: [
+			"sugar free"
+		],
+
 		popular: false,
 		rating: null,
 		rating_total: null,
@@ -71,10 +84,13 @@ const categories = [
 const categoriesDesserts = [
     "sugarfree",
     "fruity",
+	"chocolate",
+	"lactose free"
    
 ]
 
 module.exports = {
     desserts, // équivalent à courses: courses (merci ES6)
-    categories: categories
+    categories: categories,
+	categoriesDesserts : categoriesDesserts
 }

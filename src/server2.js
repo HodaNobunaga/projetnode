@@ -2,7 +2,7 @@ const fastify = require('fastify')({ logger: {
     prettyPrint:true // affichage plus jolie
 } }) 
 
-const {desserts, categories} = require('./db2');
+const {desserts, categories, categoriesDesserts} = require('./db2');
 
 
 

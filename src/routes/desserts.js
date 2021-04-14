@@ -1,5 +1,5 @@
 // Importation des dépendances
-const { desserts, categories } = require('../db2')
+const { desserts, categories, categoriesDesserts } = require('../db2')
 const createError = require('http-errors');
 
 async function routes(fastify, options) {
@@ -28,6 +28,16 @@ async function routes(fastify, options) {
 						items: {
 							type: 'string',
 							enum: categories
+						}
+					},
+					specificity: {
+						type: 'array',
+						minItems: 1,
+						maxItems: 4,
+						uniqueItems: true,
+						items: {
+							type: 'string',
+							enum: categoriesDesserts
 						}
 					},
 					popular: {
