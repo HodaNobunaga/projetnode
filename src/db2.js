@@ -68,6 +68,12 @@ const categories = [
     "italian"
 ]
 
+const categoriesDesserts = [
+    "sugarfree",
+    "fruity",
+   
+]
+
 module.exports = {
     desserts, // équivalent à courses: courses (merci ES6)
     categories: categories
